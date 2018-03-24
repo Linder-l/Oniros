@@ -32,17 +32,15 @@
                 <div class="top-left-part">
                     <!-- Logo -->
                     <a class="logo" href="index.html">
-                        <!-- Logo icon image, you can use font-icon also --><b>
-                        <!--This is dark logo icon--><img src="../plugins/images/admin-logo.png" alt="home" class="dark-logo" /><!--This is light logo icon--><img src="../plugins/images/admin-logo-dark.png" alt="home" class="light-logo" />
-                     </b>
-                        <!-- Logo text image you can use text also --><span class="hidden-xs">
-                        <!--This is dark logo text--><img src="../plugins/images/admin-text.png" alt="home" class="dark-logo" /><!--This is light logo text--><img src="../plugins/images/admin-text-dark.png" alt="home" class="light-logo" />
+
+                       <span class="hidden-xs">
+                        <img style="height: 25px" src="../plugins/images/icones.png" alt="home" class="dark-logo" /><img style="height: 25px" src="../plugins/images/icones.png" alt="home" class="light-logo" />
                      </span> </a>
                 </div>
                 <!-- /Logo -->
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">docteur Steave</b></a>
+                        <a class="profile-pic" href="./index.html"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">docteur Steave</b></a>
                     </li>
                 </ul>
             </div>
@@ -51,9 +49,6 @@
             <div class="sidebar-nav slimscrollsidebar">
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Statistiques</a>
-                    </li>
-                    <li>
                         <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
                     </li>
                     <li>
@@ -103,9 +98,10 @@
                                             <th>Prénom</th>
                                             <th>Date de naissance</th>
                                             <th>Durée du suivi</th>
-                                            <th>Fiche patient</th>
                                             <th>Observance</th>
                                             <th>Sévérité</th>
+                                            <th>Hypnotiques</th>
+                                            <th>Fiche patient</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -115,9 +111,10 @@
                                             <td>Dupont</td>
                                             <td>15 mars 1989</td>
                                             <td>5 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">100%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Oui</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -125,31 +122,32 @@
                                             <td>Martin</td>
                                             <td >15 janvier 1989</td>
                                             <td>17 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">96%</td>
                                             <td><img src="../plugins/images/orange-circle.png" style="height: 40px"></img></td>
+                                            <td>Non</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Mélanie</td>
                                             <td>Bauer</td>
                                             <td>15 mars 1989</td>
-
                                             <td>6 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">88%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Non</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>Jérome</td>
                                             <td>Léon</td>
                                             <td>15 février 1989</td>
-
                                             <td>20 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">100%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Non</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
@@ -158,86 +156,89 @@
                                             <td>15 mars 1989</td>
 
                                             <td>3 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: orangered">78%</td>
                                             <td><img src="../plugins/images/red-circle.png" style="height: 40px"></img></td>
+                                            <td>Oui</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
                                             <td>Jeanne</td>
                                             <td>Eichmann</td>
                                             <td>15 aout 1989</td>
-
                                             <td>12 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">100%</td>
                                             <td><img src="../plugins/images/orange-circle.png" style="height: 40px"></img></td>
+                                            <td>Non</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
+                                            <td>7</td>
                                             <td>Jean</td>
                                             <td>Dupont</td>
                                             <td>15 juillet 1989</td>
-
                                             <td>5 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">100%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Non</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
+                                            <td>8</td>
                                             <td>Mathilde</td>
                                             <td>Martin</td>
                                             <td>15 mars 1989</td>
-
                                             <td>17 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: red"><b>56%</b></td>
                                             <td><img src="../plugins/images/orange-circle.png" style="height: 40px"></img></td>
+                                            <td>Oui</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
+                                            <td>9</td>
                                             <td>Mélanie</td>
                                             <td>Bauer</td>
                                             <td>15 mars 1989</td>
 
                                             <td>6 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">100%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Non</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
-                                            <td>4</td>
+                                            <td>10</td>
                                             <td>Jérome</td>
                                             <td>Léon</td>
                                             <td>15 mars 1989</td>
-
                                             <td>20 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: orangered">66%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Non</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
-                                            <td>5</td>
+                                            <td>11</td>
                                             <td>Joshi</td>
                                             <td>Hickle</td>
                                             <td>15 mars 1989</td>
 
                                             <td>3 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a>
                                             <td style="color: green">90%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Oui</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                         <tr>
-                                            <td>6</td>
+                                            <td>12</td>
                                             <td>Jeanne</td>
                                             <td>Eichmann</td>
                                             <td>15 mars 1989</td>
-
                                             <td>12 jours</td>
-                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                             <td style="color: green">78%</td>
                                             <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                            <td>Oui</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
