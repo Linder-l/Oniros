@@ -8,29 +8,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Oniros</title>
-
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <!-- Bootstrap Core CSS
-
-     nom prénom, date de naissance
-
-     -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Menu CSS -->
     <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
-    <!-- toast CSS -->
-    <link href="../plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
-    <!-- morris CSS -->
-    <link href="../plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
-    <!-- chartist CSS -->
-    <link href="../plugins/bower_components/chartist-js/dist/chartist.min.css" rel="stylesheet">
-    <link href="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
-    <!-- animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- color CSS -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="./css/patient.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <![endif]-->
 </head>
 
 <body class="fix-header">
@@ -66,9 +54,6 @@
 
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav slimscrollsidebar">
-            <div class="sidebar-head">
-                <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
-            </div>
             <ul class="nav" id="side-menu">
                 <li style="padding: 70px 0 0;">
                     <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Statistiques</a>
@@ -107,9 +92,9 @@
 
 
             <div class="row">
-                <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="col-lg-2 col-sm-6 col-xs-12">
                     <div class="white-box analytics-info">
-                        <h3 class="box-title">Jean Dupont 25 ans</h3>
+                        <h3 class="box-title">Jean Dupont, 25 ans</h3>
                         <ul class="list-inline two-part">
                             <h4 class="box-title" style="color: darkblue">4 consultations</h4>
 
@@ -117,7 +102,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-xs-12">
+                <!--<div class="col-lg-3 col-sm-6 col-xs-12">
                     <div class="white-box analytics-info">
                         <h3 class="box-title">Temps de sommeil moyen</h3>
                         <ul class="list-inline two-part">
@@ -127,11 +112,50 @@
                             <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple">6.5</span></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-12">
+                </div>-->
+                <div class="col-lg-4 col-sm-7 col-xs-12">
                     <div class="white-box analytics-info">
                         <h3 class="box-title">Chronotype de sommeil</h3>
                         <h4 class="box-title" style="color: skyblue">Légèrement du matin  (15% de la population)</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center">
+                    <div class="white-box analytics-info">
+                        <h3 class="box-title">Historique patient</h3>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Modal Header</h4>
+                                <p>A bunch of text</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12" style="text-align: center">
+                    <div class="white-box analytics-info">
+                        <h3 class="box-title">Récapitulatif</h3>
+                        <a href="./patient1.html" class="waves-effect waves-light btn">Télécharger fichier csv</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 col-lg-7 col-sm-12 col-xs-12">
+                    <div class="white-box">
+                        <h3 class="box-title" style="text-align: center">Chronotype du patient</h3>
+                        <p><img src="../plugins/images/chronotype_800x500.png"></p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="white-box">
+                        <h3 class="box-title" style="text-align: center">Dette de sommeil</h3>
+                        <p><img src="../plugins/images/sleepDebt.png"></p>
                     </div>
                 </div>
             </div>
@@ -139,20 +163,12 @@
 
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <div class="white-box">
-                        <p><img src="../plugins/images/chronotype.png" style="height: 450px"></p>
-                        <!--<h3 class="box-title">Products Yearly Sales</h3>
-                        <ul class="list-inline text-right">
-                            <li>
-                                <h5><i class="fa fa-circle m-r-5 text-info"></i>Mac</h5> </li>
-                            <li>
-                                <h5><i class="fa fa-circle m-r-5 text-inverse"></i>Windows</h5> </li>
-                        </ul>
-                        <div id="ct-visits" style="height: 405px;"></div>-->
+                    <div class="white-box" style="text-align: center">
+                        <h3 class="box-title" style="text-align: center">Dernière semaine de suivi</h3>
+                        <p><img src="../plugins/images/graph.png"></p>
                     </div>
                 </div>
             </div>
-
 
 
             <div class="row">
