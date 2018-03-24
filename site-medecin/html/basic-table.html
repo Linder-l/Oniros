@@ -64,22 +64,11 @@
                 <!-- /Logo -->
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
-                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
-                    </li>
-                    <li>
                         <a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b></a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-header -->
-            <!-- /.navbar-top-links -->
-            <!-- /.navbar-static-side -->
         </nav>
-        <!-- End Top Navigation -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav slimscrollsidebar">
                 <ul class="nav" id="side-menu">
@@ -95,12 +84,6 @@
                 </ul>
             </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page Content -->
-        <!-- ============================================================== -->
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row bg-title">
@@ -123,11 +106,13 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th></th>
                                             <th>Nom</th>
                                             <th>Prénom</th>
                                             <th>Durée du suivi</th>
                                             <th>Fiche patient</th>
+                                            <th>Observance</th>
+                                            <th>Sévérité</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -137,6 +122,8 @@
                                             <td>Dupont</td>
                                             <td>5 jours</td>
                                             <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">100%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -144,6 +131,8 @@
                                             <td>Martin</td>
                                             <td>17 jours</td>
                                             <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">96%</td>
+                                            <td><img src="../plugins/images/orange-circle.png" style="height: 40px"></img></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -151,6 +140,8 @@
                                             <td>Bauer</td>
                                             <td>6 jours</td>
                                             <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">88%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
@@ -158,6 +149,8 @@
                                             <td>Léon</td>
                                             <td>20 jours</td>
                                             <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">100%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
@@ -165,6 +158,8 @@
                                             <td>Hickle</td>
                                             <td>3 jours</td>
                                             <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: orangered">78%</td>
+                                            <td><img src="../plugins/images/red-circle.png" style="height: 40px"></img></td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
@@ -172,6 +167,62 @@
                                             <td>Eichmann</td>
                                             <td>12 jours</td>
                                             <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">100%</td>
+                                            <td><img src="../plugins/images/orange-circle.png" style="height: 40px"></img></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Jean</td>
+                                            <td>Dupont</td>
+                                            <td>5 jours</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">100%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Mathilde</td>
+                                            <td>Martin</td>
+                                            <td>17 jours</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: red"><b>56%</b></td>
+                                            <td><img src="../plugins/images/orange-circle.png" style="height: 40px"></img></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Mélanie</td>
+                                            <td>Bauer</td>
+                                            <td>6 jours</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">100%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Jérome</td>
+                                            <td>Léon</td>
+                                            <td>20 jours</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: orangered">66%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Joshi</td>
+                                            <td>Hickle</td>
+                                            <td>3 jours</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a>
+                                            <td style="color: green">90%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Jeanne</td>
+                                            <td>Eichmann</td>
+                                            <td>12 jours</td>
+                                            <td><a href="./patient1.html" class="waves-effect waves-light btn">Voir la fiche</a></td>
+                                            <td style="color: green">78%</td>
+                                            <td><img src="../plugins/images/green_circle.svg.png" style="height: 47px"></img></td>
                                         </tr>
                                     </tbody>
                                 </table>
